@@ -1,0 +1,13 @@
+.
+..
+.bash_logout
+.bash_profile
+.bashrc
+.config
+.docker
+.gitconfig
+.oh-my-zsh
+.profile
+.viminfo
+.vscode-remote
+.zshrc
