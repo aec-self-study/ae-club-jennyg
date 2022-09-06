@@ -14,6 +14,7 @@ models:
         description: "Customer name"
         tests:
           - not_null
+          - unique
       - name: email
         description: "Customer email"
         tests:
@@ -23,11 +24,10 @@ models:
       - name: first_order_at
         description: "Date of first order"
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
+  - name: customer_count
+    description: "Counts total number of customers in the customer query"
     columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: customer_count
+        description: "Customer count"
         tests:
-          - unique
           - not_null
