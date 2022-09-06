@@ -2,14 +2,26 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: customers
+    description: "Our starting query for customer oder count and first order date"
     columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: customer_id
+        description: "Customer ID - the primary key for this table"
         tests:
           - unique
           - not_null
+      - name: name
+        description: "Customer name"
+        tests:
+          - not_null
+      - name: email
+        description: "Customer email"
+        tests:
+          - not_null
+      - name: n_orders
+        description: "Number of orders placed"
+      - name: first_order_at
+        description: "Date of first order"
 
   - name: my_second_dbt_model
     description: "A starter dbt model"
