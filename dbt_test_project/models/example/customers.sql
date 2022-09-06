@@ -1,3 +1,8 @@
+{{ config (
+  materialized='table'
+) }}
+
+
 with customer_orders as (
   select
      customer_id
